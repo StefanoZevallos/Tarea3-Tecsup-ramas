@@ -169,6 +169,13 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
+
+  @keyframes change-color {
+    to {
+      background-color: white;
+    }
+  }
+
   body {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -191,4 +198,23 @@ footer {
     flex-direction: row;
     padding: 2rem;
   }
+
+  .Tarjeta1 {
+    background-color: red;
+    animation: change-color 1s infinite
+  }
+
+  .Tarjeta2 {
+    background-color: white;
+  }
+
+  .Tarjeta3 {
+    background-color: white;
+  }
+
+  .Tarjeta4 {
+    background-color: red ;
+    animation: change-color 1s infinite
+  }
+
 }
