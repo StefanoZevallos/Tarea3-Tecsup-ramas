@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+@keyframes change-color {
+  to {
+    background-color: red;
+  }
+}
 
 * {
   margin: 0;
@@ -129,6 +134,7 @@ nav a {
   flex-direction: column;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  animation: change-color 1s infinite
 }
 
 .imagen-comida {
@@ -143,6 +149,7 @@ nav a {
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
+  animation: change-color 1s infinite
 }
 
 .Tarjeta3 {
@@ -152,6 +159,7 @@ nav a {
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
+  animation: change-color 1s infinite
 }
 
 .Tarjeta4 {
@@ -161,6 +169,7 @@ nav a {
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
+  animation: change-color 1s infinite
 }
 
 footer {
