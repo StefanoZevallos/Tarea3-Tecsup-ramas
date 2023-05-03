@@ -176,6 +176,12 @@ footer {
     }
   }
 
+  @keyframes typing {
+    0% { width:0%;}
+    50% { width:100%;}
+    100% { width :0; }
+    }
+
   body {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -215,6 +221,13 @@ footer {
   .Tarjeta4 {
     background-color: red ;
     animation: change-color 1s infinite
+  }
+
+  footer {
+    background-color: blue ;
+    animation: typing 2s infinite;
+    color: white;
+    font-weight: bold;
   }
 
 }
