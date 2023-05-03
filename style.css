@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
+@keyframes change-color {
+  to {
+    background-color: red;
+  }
+}
+
+@keyframes typing {
+  0% { width:0%;}
+  50% { width:100%;}
+  100% { width :0; }
+  }
+
 * {
   margin: 0;
   padding: 0;
@@ -129,6 +141,7 @@ nav a {
   flex-direction: column;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  animation: change-color 1s infinite
 }
 
 .imagen-comida {
@@ -143,6 +156,7 @@ nav a {
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
+  animation: change-color 1s infinite
 }
 
 .Tarjeta3 {
@@ -152,6 +166,7 @@ nav a {
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
+  animation: change-color 1s infinite
 }
 
 .Tarjeta4 {
@@ -161,12 +176,15 @@ nav a {
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
+  animation: change-color 1s infinite
 }
 
 footer {
   grid-area: footer;
-  border: 2px solid black;
+  border: 2px solid pink;
+  animation: typing 1s infinite;
 }
+
 
 @media screen and (min-width: 600px) {
 
